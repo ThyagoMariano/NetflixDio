@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+/* BODY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  list-style: none;
+  text-decoration: none;
+  outline-style: none;
+}
+
+body {
+  background-color: var(--font-corCinza);
+}
+
+:root {
+  --font-colorRed: #d4121c;
+  --font-colorWhite: #feffff;
+  --font-colorBlack: #0c0d0e;
+  --font-colorGray: #565153;
+
+  --font-colorLightBlack: #222222;
+  --font-colorLightGray: #a5a5ae;
+}
+
+/* SOLTOS */
+.container {
+  width: 95%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.alg {
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-b {
+  justify-content: space-between;
+}
+
+
+/* HEADER */
+header {
+  justify-content: center;
+  background-color: var(--font-colorLightBlack);
+  height: 12vh;
+}
+
+header .container .logo h1 {
+  color: var(--font-colorRed);
+}
+
+.container .logo span {
+  background-image: linear-gradient(to right, rgb(91, 173, 250), rgb(91, 115, 250), rgb(161, 47, 236));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* MENUS */
+header .container .menus {
+  justify-content: space-between;
+  width: 85%;
+
+  height: 48px;
+  align-items: center;
+}
+
+header .container .menus nav ul li a {
+  color: var(--font-colorWhite);
+}
+
+.nav-direita ul li a img {
+  width: 24px;
+}
+
+.nav-esquerda {
+  margin-left: 10px;
+}
+
+.nav-esquerda ul li,
+.nav-direita ul li {
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.nav-esquerda ul li a:hover,
+.nav-direita ul li .genero:hover {
+  border-bottom: 1px solid var(--font-colorLightGray);
+}
+
+
+
+/* MAIN */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),
+    url('https://s2.glbimg.com/yg-hfdnZv9EHIcWpAlIKIg3CVQE=/top/e.glbimg.com/og/ed/f/original/2019/03/22/super.png');
+  height: 38vh;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+.banner .container .info {
+  margin-top: 10px;
+}
+
+.banner .container p {
+  width: 50%;
+}
+
+/* botoes */
+
+.botoes a img {
+  width: 32px;
+  padding-right: 10px;
+}
+
+.botoes {
+  width: 50%;
+}
+
+.botoes a {
+  padding: 10px 20px;
+
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes .bt-1 {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: var(--font-colorWhite);
+  color: var(--font-colorBlack);
+}
+
+.botoes .bt-1:hover {
+  background-color: rgb(212, 211, 211);
+  translate: 0.3s;
+}
+
+.botoes .bt-2 {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: var(--font-colorWhite);
+  background-color: var(--font-colorGray);
+}
+
+.botoes .bt-2:hover {
+  translate: 0.3s;
+  background-color: rgb(105, 104, 104);
+}
+
+
+/* Section */
+section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--font-colorLightBlack);
+  overflow: hidden;
+  height: 100%;
+}
+
+ul {
+  justify-content: center;
+}
+
+/* img */
+
+.box-filme {
+  width: 100%;
+  height: 150px;
+  display: block;
+
+  object-fit: cover;
+  object-position: top;
+}
+
+/* descricao do conteudo */
+.Temp__idade__ano {
+  margin: 4px;
+}
+
+.Temp__idade__ano .idade {
+  background-color: var(--font-colorRed);
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+
+.Temp__idade__ano {
+  border-bottom: 1px solid var(--font-colorGray);
+}
+
+.Temp__idade__ano li,
+.tipo__conteudo li {
+  margin: 0px 3px;
+  color: var(--font-colorWhite);
+  align-items: center;
+  text-align: center;
+}
+
+
+/* 2 sessão */
+.titulo__sessao2 {
+  padding-top: 10px;
+  padding-left: 25px;
+  color: var(--font-colorWhite);
+  background-color: var(--font-colorLightBlack);
+  height: 100%;
+}
+
+
+/* OWL */
+.owl-carousel .owl-dots {
+  display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--font-colorLightBlack);
+
+}
+
+footer .container h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: var(--font-colorRed);
+}
+
+footer .container a {
+  text-align: center;
+}
+
+footer .container a img {
+  width: 24px;
+  background-color: var(--font-colorWhite);
+  border-radius: 100%;
+}
+
+footer .container .redes {
+  color: var(--font-colorLightGray);
+  display: flex;
+  margin: 5px 0px;
+}
+
+footer .container .redes a {
+  padding-right: 5px;
+}
